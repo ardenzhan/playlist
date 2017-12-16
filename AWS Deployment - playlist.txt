@@ -58,7 +58,7 @@ generate new ssh key
 > sudo apt-get install git
 
 > cd /var
-> /var/www
+> sudo mkdir www
 > cd www
 
 ### Pulling Rails project into AWS EC2 ###
