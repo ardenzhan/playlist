@@ -1,0 +1,24 @@
+<p><a href='<%= songs_path %>'>Dashboard</a></p>
+<h1><%= @user.first_name %> <%= @user.last_name %>'s Playlist</h1>
+
+<table>
+<thead>
+    <tr>
+        <th>Artist</th>
+        <th>Title</th>
+        <th>Times Added</th>
+    </tr>
+</thead>
+
+<tbody>
+    <% @addsongs.each do |song| %>
+        <tr>
+            <td><%= song.artist %></td>
+            <td><%= song.title %></td>
+            <td><%= @addcount[song.id] %></td>
+        </tr>
+    <% end %>
+</tbody>
+
+
+</table>
